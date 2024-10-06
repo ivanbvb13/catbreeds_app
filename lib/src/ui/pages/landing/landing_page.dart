@@ -10,6 +10,7 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 
 class LandingPage extends StatefulWidget {
+  static const route = '/';
   const LandingPage({super.key});
 
   @override
