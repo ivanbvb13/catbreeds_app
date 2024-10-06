@@ -40,9 +40,9 @@ class Breed {
     Weight weight;
     String id;
     String name;
-    String cfaUrl;
-    String vetstreetUrl;
-    String vcahospitalsUrl;
+    String? cfaUrl;
+    String? vetstreetUrl;
+    String? vcahospitalsUrl;
     String temperament;
     String origin;
     String countryCodes;
@@ -50,11 +50,11 @@ class Breed {
     String description;
     String lifeSpan;
     int indoor;
-    int lap;
+    int? lap;
     int adaptability;
     int affectionLevel;
     int childFriendly;
-    int catFriendly;
+    int? catFriendly;
     int dogFriendly;
     int energyLevel;
     int grooming;
@@ -64,7 +64,7 @@ class Breed {
     int socialNeeds;
     int strangerFriendly;
     int vocalisation;
-    int bidability;
+    int? bidability;
     int experimental;
     int hairless;
     int natural;

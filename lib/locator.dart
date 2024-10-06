@@ -1,5 +1,6 @@
 import 'package:catbreeds_app/src/domain/services/implementations/thecatapi_service.dart';
 import 'package:catbreeds_app/src/domain/services/interfaces/i_thecatapi_service.dart';
+import 'package:catbreeds_app/src/ui/controllers/detail_controller.dart';
 import 'package:catbreeds_app/src/ui/controllers/landing_controller.dart';
 import 'package:get_it/get_it.dart';
 
@@ -12,4 +13,6 @@ void setUpLocator() {
   // UI
   locator.registerFactory<LandingController>(
       () => LandingController(locator<ITheCatApiService>()));
+  locator.registerFactory<DetailController>(
+      () => DetailController(locator<ITheCatApiService>()));
 }
