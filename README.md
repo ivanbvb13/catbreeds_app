@@ -1,16 +1,87 @@
-# catbreeds_app
+# CATBREEDS APP
 
-A new Flutter project.
+[![Flutter](https://img.shields.io/badge/Flutter-Framework-blue)](https://flutter.dev)
+[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/tuusuario/tu-repo/releases)
 
-## Getting Started
+## Descripción
 
-This project is a starting point for a Flutter application.
+Catbreeds App es una aplicación que utiliza la API de `thecatapi` para proporcionar información detallada sobre diversas razas de gatos. Permite a los usuarios explorar una lista completa de razas, conocer sus orígenes y acceder a otros detalles importantes.
 
-A few resources to get you started if this is your first Flutter project:
+## Características
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- 🐱 Información detallada sobre razas de gatos.
+- 🌍 Consulta la información desde varias fuentes de datos.
+- 📊 Visualización de estadísticas y niveles (ej: energía, afecto, inteligencia).
+- 🔍 Filtrar y buscar por distintas razas.
+- 🌐 Integración con enlaces a recursos externos.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Capturas de Pantalla
+
+![Screenshot0](screenshots/splash.png){ width=200px }![Screenshot1](screenshots/landing.png){ width=200px } ![Screenshot2](screenshots/search.png){ width=200px } ![Screenshot3](screenshots/detail.png){ width=200px }
+
+## Requisitos del Sistema
+
+- Flutter 3.24.3 
+- Dart 3.5.3
+- Compatible con iOS y Android
+
+## Instalación
+
+Sigue estos pasos para clonar y ejecutar la aplicación en tu máquina local.
+
+1. **Clona el repositorio:**
+
+```bash
+git clone https://github.com/ivanbvb13/catbreeds_app.git
+cd catbreeds_app
+```
+
+## Estructura 
+
+
+```
+├── lib/
+│   ├── src/
+│   │   ├── domain/
+│   │   │   ├── constants/            # Constantes globales del proyecto
+│   │   │   ├── helpers/              # Funciones auxiliares y utilidades
+│   │   │   ├── models/               # Modelos de datos
+│   │   │   ├── services/
+│   │   │   │   ├── implementations/  # Implementaciones de servicios
+│   │   │   │   ├── interfaces/       # Definición de interfaces para servicios
+│   │   ├── ui/
+│   │   │   ├── controllers/          # Controladores para gestionar la lógica de la UI
+│   │   │   ├── pages/
+│   │   │   │   ├── detail/           # Página de detalle
+│   │   │   │   ├── landing/          # Página de inicio o bienvenida
+│   │   │   ├── shared/               
+│   │   │   │   ├── helper/           # Helpers compartidos dentro de la UI
+│   │   │   ├── widgets/              # Componentes reutilizables (widgets) dentro de la UI
+├── locator.dart                      # Archivo para la configuración de dependencias
+├── main.dart                         # Archivo principal que inicia la aplicación
+
+```
+
+
+## Dependencias
+
+Estas son algunas de las principales dependencias utilizadas en el proyecto:
+
+- **flutter_native_splash**: Permite crear pantallas de carga nativas para la aplicación, mejorando la experiencia de usuario al iniciar.
+- **get_it**: Un contenedor de inyección de dependencias para Flutter, que facilita la gestión de instancias y la organización del código.
+- **get**: Un paquete que proporciona soluciones de gestión del estado, enrutamiento y más, simplificando el desarrollo de aplicaciones Flutter.
+- **http**: Utilizado para el manejo de peticiones HTTP, permitiendo realizar solicitudes a servidores y obtener datos de APIs.
+- **cached_network_image**: Permite cargar imágenes desde la red y almacenarlas en caché local, mejorando la eficiencia y experiencia del usuario.
+
+### Instalación de las dependencias
+
+Asegúrate de tener estas dependencias agregadas en tu archivo `pubspec.yaml`:
+
+```yaml
+dependencies:
+  flutter_native_splash: ^2.4.1
+  get_it: ^8.0.0
+  get: ^4.6.6
+  http: null
+  cached_network_image: ^3.4.1
+```

@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'CatBreeds App',
-      initialRoute: "/",
+      initialRoute: LandingPage.route,
       routes: {
-        '/': (context) => const LandingPage(),
+        LandingPage.route: (context) => const LandingPage(),
       },
     );
   }
