@@ -90,3 +90,17 @@ dependencies:
   http: null
   cached_network_image: ^3.4.1
 ```
+
+
+## Fuentes
+
+La aplicación utiliza la fuente `Poppins-Regular.ttf` para una mejor apariencia y legibilidad. Asegúrate de incluir esta fuente en tu proyecto y declararla en el archivo `pubspec.yaml`:
+
+```yaml
+flutter:
+    fonts:
+        - family: PoPoppinsRegularppins
+            fonts:
+                - asset: fonts/Poppins-Regular.ttf
+```
+
