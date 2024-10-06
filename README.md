@@ -17,7 +17,12 @@ Catbreeds App es una aplicación que utiliza la API de `thecatapi` para proporci
 
 ## Capturas de Pantalla
 
-![Screenshot0](screenshots/splash.png){ width=200px }![Screenshot1](screenshots/landing.png){ width=200px } ![Screenshot2](screenshots/search.png){ width=200px } ![Screenshot3](screenshots/detail.png){ width=200px }
+<p float="left">
+  <img src="screenshots/splash.png" width="200" />
+  <img src="screenshots/landing.png" width="200" />
+  <img src="screenshots/search.png" width="200" />
+  <img src="screenshots/detail.png" width="200" />
+</p>
 
 ## Requisitos del Sistema
 
