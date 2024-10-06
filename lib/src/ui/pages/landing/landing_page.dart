@@ -2,6 +2,8 @@ import 'package:catbreeds_app/locator.dart';
 import 'package:catbreeds_app/src/domain/helpers/url_image_helper.dart';
 import 'package:catbreeds_app/src/domain/models/cat.dart';
 import 'package:catbreeds_app/src/ui/controllers/landing_controller.dart';
+import 'package:catbreeds_app/src/ui/pages/detail/detail_page.dart';
+import 'package:catbreeds_app/src/ui/shared/helper/navigator_helper.dart';
 import 'package:catbreeds_app/src/ui/widgets/cat_breed_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
@@ -102,7 +104,9 @@ class _LandingPageState extends State<LandingPage> {
             paisOrigen: cat.origin,
             inteligencia: cat.intelligence.toString(),
             onTap: () {
-              print(cat.referenceImageId);
+              // Navegamos a la pagina de detalle
+              NavigatorHelper.pushWithSlideTransition(
+                  context, DetailPage(catId: cat.referenceImageId!));
             },
           );
         },
